@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dziedziczenie</title>
+    <style>
+        body {
+            font-size: 30px; /*dziedziczy*/
+            border: solid; /*nie dziedziczy*/
+        }
+        em {
+            font-size: 24px; /*nadpisuje, bo wyższy priorytet*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Pierwsza linijka
+        <p>Druga <em>linijka</em></p>
+        <!-- em - emphasize -->
+    </div>
+</body>
+</html>
