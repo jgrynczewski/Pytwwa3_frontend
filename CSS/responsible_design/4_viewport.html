@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" control="width=device-width" initial-scale="1.0">
+    <title>Media Queries 1</title>
+    <style>
+        @media (min-width: 700px){
+            h1::before {
+                content: "Witaj na mojej stronie";
+            }
+        }
+        @media (max-width: 699px) {
+            h1::before {
+                content: "Witaj!";
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+</body>
+</html>
