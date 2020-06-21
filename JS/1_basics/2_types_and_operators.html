@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // typeof
+        console.log(typeof 'asd');
+        console.log(typeof "qw");
+        console.log(typeof `cv`);
+        console.log(typeof 45);
+        console.log(typeof 2.45);
+
+        let price = 12
+        price = price + 2;
+        console.log(price);
+        price += 2;
+        console.log(price);
+
+        price += 1;
+        console.log(price);
+
+        ++price;
+        console.log(price);
+        console.log(++price);
+        console.log(price++);
+
+        // Inkrementacja
+        ++price;
+        price++;
+        // Dekrementacja
+        --price;
+        price--;
+
+        // Precyzja
+        console.log(1.1+1.3);
+
+        // Znaki specjalne
+        console.log("\"");
+
+        // Interpolacja stringu
+        // literał szablonu
+        let name = "Jan";
+        console.log(`Witaj ${name}`);
+
+        // Konkatenacja
+        let msg = "Hello";
+        console.log(msg + " world!");
+        console.log(msg.toLowerCase()) //.lower
+
+        // Rzutowanie - konwersja typu
+        let a = 123
+        console.log(typeof a.toString());
+
+        let x = "123";
+        console.log(Number.parseFloat(x));
+        console.log(Number.parseFloat("a44"));
+        console.log(Number.parseFloat("34asdfewq"));
+
+        // Niejawne rzutowanie
+        let b = "5";
+        console.log(b + 2);
+
+        // Boolean
+        let opened = true;
+        opened = false;
+        console.log(!opened);
+
+        // undefined vs null
+        let c;
+        console.log(c);
+        c=null;
+        console.log(c);
+
+        // Obiekty
+
+        let person = {
+            firstName: "Jan",
+            lastName: "Kowalski"
+        }
+
+        console.log(person.firstName);
+        console.log(person.lastName);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
