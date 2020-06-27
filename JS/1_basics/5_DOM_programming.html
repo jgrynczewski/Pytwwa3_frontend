@@ -27,7 +27,38 @@
 
         person2.showInfo();
 
-        
+        // Przekazywanie przez wartość
+        let message = "Czesc";
+
+        function changeMessage(message) {
+            message = "Witaj";
+        }
+
+        changeMessage(message);
+        console.log(message);
+
+        // Przekazywanie przez referencję
+        let person4 = {
+            age: 32
+        }
+
+        function incrementAge(person) {
+            person.age++;
+        }
+
+        incrementAge(person4);
+        console.log( person4.age );
+
+        // OBIEKTY SĄ PRZEKAZYWANE PRZEZ REFERENCJĘ
+
+        // Build-in objects
+        // Date object
+        let now = new Date();
+        console.log(now.toDateString());
+
+        // Math object
+        console.log(Math.PI);
+        console.log(Math.abs(-23));
     </script>
 <body>
 
