@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    // 1. Definicja funkcji
+    function show() {
+        console.log('Hello');
+    }
+
+    show();
+
+    // 2. Wyrażenia funkcyjne (function expressions)
+    let moja_funkcja = function show1() {
+        console.log('Hello1');
+    }
+
+    moja_funkcja();
+
+    let moja_funkcja2 = function () {
+        console.log('Hello2');
+    }
+
+    moja_funkcja2();
+
+    // Funkcje anonimowe
+    //function () {
+    //    console.log('Hello2');
+    //}
+
+    // Parametry wejściowe
+    function show3(msg) {
+        console.log(msg);
+    }
+
+    show3("Hello3");
+
+    let moja_funkcja3 = function (msg) {
+        console.log(msg);
+    }
+    moja_funkcja3("Hello4");
+    moja_funkcja3();
+
+    // Zwracana wartość
+    function getCode(value) {
+        let code = value * 10;
+        return code
+    }
+
+    console.log(getCode(2));
+
+</script>
+<body>
+
+</body>
+</html>
