@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    // Warunki
+
+    if (5>4) {
+        console.log("OK");
+    }
+
+    // identyczność vs równość
+    // identity vs equality
+
+    // Równość = ta sama wartość
+    if (5==5) {
+        console.log("5 equal 5");
+    }
+    if (5.0==5) {
+        console.log("5.0 equal 5");
+    }
+    if ("5"==5) {
+        console.log('"5.0" equal 5');
+    }
+
+    // Identyczności = ten sam typ i wartość
+    // Lepiej używać operatora idetnyczności i jawnego rzutowania
+    if (5 === 5) {
+        console.log('5 is identical as 5');
+    }
+    if (5.0 === 5) { // jedyny typ numeryczny w js to Number
+        console.log('5.0 is identical as 5');
+    }
+    if ("5" === 5) {
+        console.log('"5" is identical as 5');
+    }
+
+    let p=5;
+    if (p>5) {
+        console.log('p greater than 5');
+    } else if (p<5) {
+        console.log('p less than 5');
+    } else {
+        console.log('p equal 5');
+    }
+
+    // W przypadku jednolinijkowych bloków możemy ominąć nawiasy
+    // klamrowe.
+
+    if (p>5) console.log('p greater than 5');
+    else if (p<5) console.log('p less than 5');
+    else console.log('p equal 5');
+
+    // Ternary operator - bardziej zwięzły zapis warunku
+    // cukier składniowy (syntaktyczny) - syntactic sugar
+    let price = 20;
+
+    let msg;
+    if (price > 10) msg = 'drogie';
+    else msg = 'tanie';
+
+    msg = (price > 10) ? 'drogie' : 'tanie';
+    console.log(msg);
+
+    (price > 10) ? console.log('drogie') : console.log('tanie');
+
+    // Pętle
+
+    // 1. Pętla
+    for (let i=0; i<3; i++) {
+        console.log(i);
+    }
+
+    for (let i=0; i<3; i++) console.log(i);
+
+    // Nieskończone pętle
+    //for (let i=0; i<3; i--) {
+    //    console.log(i)
+    //}
+
+    // 2. WHILE
+    let j=0;
+    while(j>3) {
+        console.log(j);
+        j++;
+    }
+
+    // 3. DO WHILE - w odróżnieniu od pętli WHILE zawsze przynajmniej
+    // jeden raz się wykona
+
+    let k=4;
+    do {
+        console.log(k);
+        k++;
+    } while (k>7);
+
+</script>
+<body>
+
+</body>
+</html>
