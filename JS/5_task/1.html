@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO list</title>
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('form').onsubmit = function () {
+            let task = document.querySelector('#task').value;
+
+            let li = document.createElement('li');
+            li.innerHTML = task;
+
+            document.querySelector('ul').append(li);
+            document.querySelector('#task').value = "";
+            return false;
+        }
+    });
+
+</script>
+<form>
+    <input id="task" type="text">
+    <input type="submit">
+
+    <h1>Lista zadań</h1>
+    <ul>
+
+    </ul>
+</form>
+
+</body>
+</html>

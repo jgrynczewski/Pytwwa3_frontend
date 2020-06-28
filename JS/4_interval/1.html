@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+</head>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        setInterval(increment, 200);
+    });
+
+    let counter = 0
+
+    function increment() {
+        counter++;
+        document.querySelector('p').innerHTML = counter;
+    }
+</script>
+<body>
+    <p id="counter" style="font-size: 80px; text-align: center;">0</p>
+</body>
+</html>
