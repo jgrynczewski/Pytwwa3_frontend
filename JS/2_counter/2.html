@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let counter = 0
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('button').onclick = function () {
+                counter++;
+                document.querySelector('h1').innerHTML = counter;
+
+                if (counter % 10 == 0) {
+                alert(`Wartość licznika wynosi ${counter}`);
+                }
+            };
+        });
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+    <button>Kliknij</button>
+</body>
+</html>

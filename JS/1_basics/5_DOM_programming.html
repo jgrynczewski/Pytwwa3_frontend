@@ -59,8 +59,41 @@
         // Math object
         console.log(Math.PI);
         console.log(Math.abs(-23));
+
+        // DOM
+
+        function changeContent(msg) {
+            document.getElementById('message').textContent = msg;
+            return "OK";
+        }
+
+        // property style
+
+        function stylizeElement() {
+            let paragraph = document.getElementById('message');
+            paragraph.style.color = "red";
+            paragraph.style.backgroundColor = "yellow";
+            paragraph.style.fontSize = "30px";
+            paragraph.style.fontWeight = "bold";
+        }
+
+        // Detection
+
+        function detectClick() {
+            let button = document.getElementById('btn');
+            button.addEventListener('click', function () {
+                console.log("Click");
+            });
+        }
+
     </script>
 <body>
-
+    <p id="message">Witaj</p>
+    <button id="btn">Kliknij</button>
 </body>
+<script>
+    changeContent("Cześć");
+    stylizeElement();
+    detectClick();
+</script>
 </html>
